@@ -1,7 +1,8 @@
 import styles from "./index.module.css";
 import Head from "next/head";
-import Search from "../../components/Search/Search";
+import Search from "../../components/Search";
 import Image from "next/image";
+import Link from "next/link";
 
 import Sidebar from "../../components/Sidebar/index";
 
@@ -35,12 +36,16 @@ export default function Products({ allproducts }) {
           <ul className={styles.products}>
             {allproducts.slice(0, 40).map((allproducts) => (
               <li key={allproducts.id}>
-                <Image
-                  src={allproducts.url}
-                  width={420}
-                  height={420}
-                  className={styles.unicproducts}
-                />
+                <Link href={`/products/${allproducts.id}`} legacyBehavior>
+                  <a>
+                    <Image
+                      src={allproducts.url}
+                      width={420}
+                      height={420}
+                      className={styles.unicproducts}
+                    />
+                  </a>
+                </Link>
 
                 <div className={styles.titlebox}>
                   <p>{allproducts.title}</p>
