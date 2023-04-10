@@ -6,7 +6,7 @@ import styles from "./404.module.css";
 export default function erro404() {
   const router = useRouter();
   const { asPath } = router;
-  const [segmento, setSegmento] = useState(null);
+  const [segmento, setSegmento] = useState("");
 
   useEffect(() => {
     // atualiza o estado do segmento quando o componente é montado no lado do cliente
@@ -18,7 +18,7 @@ export default function erro404() {
       <Search />
       <div className={styles.container}>
         <h1 className={styles.erro}>404</h1>
-        <h1>"{segmento}" NÃO FOI ENCONTRADO.</h1>
+        <h1>"{segmento.toUpperCase()}" NÃO FOI ENCONTRADO.</h1>
       </div>
     </>
   );

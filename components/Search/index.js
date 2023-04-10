@@ -14,7 +14,7 @@ export default function Search() {
     if (mappedRoute) {
       router.push(mappedRoute);
     } else {
-      console.error("Palavra-chave inválida");
+      router.push(`/products/${value}`);
     }
   };
 
