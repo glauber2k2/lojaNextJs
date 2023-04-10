@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 
 import styles from "./item.module.css";
@@ -39,9 +38,7 @@ export async function getStaticPaths() {
 export default function Item({ item }) {
   return (
     <>
-      <div className={styles.busca}>
-        <Search />
-      </div>
+      <Search />
 
       <div className={styles.sidebar}>
         <Sidebar />

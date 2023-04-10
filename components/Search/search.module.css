@@ -1,3 +1,9 @@
+.container{
+  display: flex;
+  margin: 3rem auto;
+  justify-content: center;
+}
+
 .busca {
   color: var(--primary80);
   height: 3rem;
@@ -15,6 +21,8 @@
   width: 10rem;
   font-size: 1rem;
   font-weight: bold;
+  font-family: 'Mukta', sans-serif;
+  
  }
 
  .botao:hover {

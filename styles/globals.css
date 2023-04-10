@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
+
 :root {
   
     --fundoelementos: #fae2b5;
@@ -12,4 +14,8 @@
 
   background-color: #fbf4e6;
   color: var(--primary30);
+}
+
+body {
+  font-family: 'Mukta', sans-serif;
 }

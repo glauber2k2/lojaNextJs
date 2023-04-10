@@ -23,9 +23,7 @@ export default function Products({ allproducts }) {
         <title>Produtos - Monteiro</title>
       </Head>
 
-      <div className={styles.busca}>
-        <Search />
-      </div>
+      <Search />
 
       <div className={styles.container}>
         <div className={styles.sidebar}>

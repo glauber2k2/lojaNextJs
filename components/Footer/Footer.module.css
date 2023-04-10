@@ -6,7 +6,6 @@
 .container p {
   color: var(--primary40);
   font-size: 1.5rem;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  text-align: center; 
   font-weight: bold;
 }

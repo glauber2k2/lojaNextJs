@@ -17,7 +17,6 @@
   color: var(--primary100);
   font-weight: bold;
   font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
 }
 
@@ -26,7 +25,6 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 22px;
-  font-family: monospace;
   text-decoration: underline;
   transition: 0.2s;
 }
@@ -36,6 +34,5 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 23px;
-  font-family: monospace;
   text-decoration: underline;
 }

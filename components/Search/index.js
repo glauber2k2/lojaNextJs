@@ -20,7 +20,7 @@ export default function Search() {
 
   return (
     <>
-      <div>
+      <div className={styles.container}>
         <input
           className={styles.busca}
           type="search"

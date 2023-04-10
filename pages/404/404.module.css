@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.erro {
+  padding: 0 1rem;
+  border-right: 1px solid var(--primary30);
+}
+
+.container h1 {
+  padding: 0 1rem;
+  
+}
