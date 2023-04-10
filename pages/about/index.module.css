@@ -1,0 +1,31 @@
+.container {
+  color: var(--primary100);
+  display: flex;
+  align-items: center ;
+  flex-direction: column;
+  text-align: center;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-decoration: none;
+  gap: 2rem;
+}
+
+.redes a{
+  font-size: 30px;
+  color: var(--primary100);
+  text-decoration: none;
+  transition: 0.25s;
+  font-weight: bold;
+}
+
+.redes a:hover{
+  font-size: 35px;
+  color: var(--primary30);
+  text-decoration: underline;
+  font-weight: bold;
+
+}

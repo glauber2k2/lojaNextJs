@@ -1,0 +1,12 @@
+.container {
+  padding: 1rem;
+  background-color: var(--fundoelementos);
+}
+
+.container p {
+  color: var(--primary40);
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}

@@ -1,0 +1,49 @@
+.busca {
+  display: flex;
+  justify-content: center;
+ 
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.sidebar{
+  width: 15%;
+}
+
+.result {
+  width: 85%;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  list-style: none;
+
+}
+
+.titlebox {
+  background-color: var(--fundoelementos);
+  margin: -1.3rem 1rem 1rem 1rem;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.products p{
+  width: 400px;
+  margin-left: 1rem;
+  color: var(--primary100);
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.unicproducts{
+  margin-inline: 1rem;
+}

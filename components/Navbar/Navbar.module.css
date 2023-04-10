@@ -1,0 +1,25 @@
+.Navbar {
+  background-color: var(--fundoelementos);
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  list-style: none;
+  min-height: 2rem;
+}
+
+.Navbar a{
+  color: var(--primary100);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+.Navbar a:hover {
+  text-decoration: underline;
+  color: var(--primary30);
+  text-shadow: 2px 2px 4px rgba(253, 252, 252, 0.2);
+  font-size: 25px;
+}

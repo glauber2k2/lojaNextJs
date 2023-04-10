@@ -1,0 +1,27 @@
+.busca {
+  color: var(--primary80);
+  height: 3rem;
+  width: 30rem;
+  text-align: center;
+  font-size: 1rem;
+  border: 5px solid var(--primary40);
+ }
+
+ .botao {
+  color: white;
+  border: 5px solid var(--primary40);
+  background-color: var(--primary40);
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: bold;
+ }
+
+ .botao:hover {
+  color: white;
+  border: 5px solid var(--primary40);
+  background-color: var(--primary30);
+  height: 3rem;
+  width: 10rem;
+  font-size: 1rem;
+ }

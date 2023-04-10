@@ -1,0 +1,55 @@
+import styles from "./index.module.css";
+import Head from "next/head";
+import Search from "../../components/Search/Search";
+import Image from "next/image";
+
+import Sidebar from "../../components/Sidebar/index";
+
+export async function getStaticProps() {
+  const data = await fetch("https://jsonplaceholder.typicode.com/photos");
+
+  const allproducts = await data.json();
+
+  return {
+    props: { allproducts },
+  };
+}
+
+export default function Products({ allproducts }) {
+  return (
+    <>
+      <Head>
+        <title>Produtos - Monteiro</title>
+      </Head>
+
+      <div className={styles.busca}>
+        <Search />
+      </div>
+
+      <div className={styles.container}>
+        <div className={styles.sidebar}>
+          <Sidebar />
+        </div>
+
+        <div className={styles.result}>
+          <ul className={styles.products}>
+            {allproducts.slice(0, 40).map((allproducts) => (
+              <li key={allproducts.id}>
+                <Image
+                  src={allproducts.url}
+                  width={420}
+                  height={420}
+                  className={styles.unicproducts}
+                />
+
+                <div className={styles.titlebox}>
+                  <p>{allproducts.title}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </>
+  );
+}
