@@ -1,11 +1,27 @@
 .container {
-  padding: 1rem;
+  padding: 0.3rem 0;
   background-color: var(--fundoelementos);
 }
 
 .container p {
-  color: var(--primary40);
+  color: var(--primary60);
   font-size: 1.5rem;
   text-align: center; 
   font-weight: bold;
+}
+
+@media(max-width: 912px) {
+  .container {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 5px;
+    padding: 0.1rem 0;
+    position: fixed;
+    
+  }
+
+  .container p {
+    font-size: 1rem;
+  }
 }

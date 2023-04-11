@@ -7,14 +7,23 @@
 
 .container h1 {
   color: var(--primary100);
-  text-shadow: 
-               -1px -1px 0px #0000, 
-               -1px 1px 0px #0000,                    
-                1px -1px 0px #0000,                  
-                1px 0px 0px #0000;
+  
 }
 
 .image {
   margin-top: 3rem;
 
+}
+
+@media(max-width: 768px) {
+  .image {
+    margin-top: 2rem;
+    width: 20rem;
+    height: 10rem;
+  }
+
+  
+  .container h1 {
+    text-align: center;
+  }
 }

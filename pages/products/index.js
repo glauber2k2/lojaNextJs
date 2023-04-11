@@ -35,8 +35,8 @@ export default function Products({ allproducts }) {
                   <a>
                     <Image
                       src={allproducts.url}
-                      width={210}
-                      height={210}
+                      width={1280}
+                      height={1280}
                       className={styles.unicproducts}
                     />
                   </a>

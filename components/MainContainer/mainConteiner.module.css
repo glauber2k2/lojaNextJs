@@ -1,3 +1,9 @@
 .container{
-  min-height: 48rem;
+  min-height: 49.5rem;
+}
+
+@media(max-width: 768px) {
+  .container{
+    min-height: 35.5rem;
+  }
 }
