@@ -18,8 +18,8 @@ export default function Home() {
           <a>
             <Image
               src="/images/home.jpg"
-              width={1280}
-              height={720}
+              width={700}
+              height={430}
               className={styles.image}
             />
           </a>

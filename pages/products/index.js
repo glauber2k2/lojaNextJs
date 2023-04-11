@@ -24,12 +24,9 @@ export default function Products({ allproducts }) {
       </Head>
 
       <Search />
+      <Sidebar />
 
       <div className={styles.container}>
-        <div className={styles.sidebar}>
-          <Sidebar />
-        </div>
-
         <div className={styles.result}>
           <ul className={styles.products}>
             {allproducts.slice(0, 40).map((allproducts) => (
@@ -38,8 +35,8 @@ export default function Products({ allproducts }) {
                   <a>
                     <Image
                       src={allproducts.url}
-                      width={420}
-                      height={420}
+                      width={210}
+                      height={210}
                       className={styles.unicproducts}
                     />
                   </a>
