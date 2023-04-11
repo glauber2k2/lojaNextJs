@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 
 import styles from "./item.module.css";
 
@@ -38,6 +39,10 @@ export async function getStaticPaths() {
 export default function Item({ item }) {
   return (
     <>
+      <Head>
+        <title>{item.title.split(" ")[0]} - Monteiro</title>
+      </Head>
+
       <Search />
 
       <div className={styles.sidebar}>
