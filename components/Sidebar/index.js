@@ -6,10 +6,7 @@ export default function Sidebar() {
   return (
     <div>
       <ul className={styles.Sidebar}>
-        <li>
-          <h1>Produtos</h1>
-        </li>
-
+        <p>...</p>
         <li>
           <Link legacyBehavior href="/products/pants">
             <a>Calças</a>

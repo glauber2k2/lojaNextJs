@@ -1,3 +1,9 @@
+.Search {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
 .container {
   display: flex;
   margin: auto;
@@ -11,10 +17,25 @@
 }
 
 .photoitem {
-  width: 50rem;
-  height: 50rem;
+  width: 30rem;
+  height: 30rem;
   border: 5px solid var(--primary30);
   border-radius: 50px;
+}
+
+@media(max-width: 768px) {
+  .photoitem {
+    margin-top: 5rem;
+    width: 20rem;
+    height: 20rem;
+    border: 5px solid var(--primary30);
+    border-radius: 50px;
+  }
+
+  .container h1 {
+    color: var(--primary60);
+    font-size: 12px;
+  }
 }
 
 

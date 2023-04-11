@@ -39,14 +39,13 @@ export async function getStaticPaths() {
 export default function Item({ item }) {
   return (
     <>
+      <Sidebar />
+
       <Head>
         <title>{item.title.split(" ")[0]} - Monteiro</title>
       </Head>
-
-      <Search />
-
-      <div className={styles.sidebar}>
-        <Sidebar />
+      <div className={styles.Search}>
+        <Search />
       </div>
 
       <div className={styles.container}>

@@ -1,35 +1,39 @@
 .container{
-  display: flex;
-  margin: 3rem auto;
-  justify-content: center;
+  display: block;
 }
 
 .busca {
-  color: var(--primary80);
-  height: 3rem;
-  width: 30rem;
+  display: flex;
+  margin: auto;
+  background-color: var(--fundoelementos);
+  border: 1px solid var(--primary100);
+  width: 20rem;
+  height: 2rem;
   text-align: center;
-  font-size: 1rem;
-  border: 5px solid var(--primary40);
- }
-
- .botao {
-  color: white;
-  border: 5px solid var(--primary40);
-  background-color: var(--primary40);
-  height: 3rem;
-  width: 10rem;
-  font-size: 1rem;
   font-weight: bold;
-  font-family: 'Mukta', sans-serif;
-  
- }
+  color: var(--primary100);
+}
 
- .botao:hover {
-  color: white;
-  border: 5px solid var(--primary40);
-  background-color: var(--primary30);
-  height: 3rem;
-  width: 10rem;
-  font-size: 1rem;
- }
+.botao{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  background-color: var(--primary100);
+  border: 1px solid var(--primary100);
+  width: 20rem;
+  height: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .busca {
+    width: 40rem;
+  }
+  
+  .botao{
+    width: 40rem;
+  }
+}
