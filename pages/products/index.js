@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export async function getStaticProps() {
-  const data = await fetch("https://jsonplaceholder.typicode.com/photos");
+  const data = await fetch("https://jsonplaceholder.typicode.com/posts");
 
   const allproducts = await data.json();
 
@@ -31,7 +31,7 @@ export default function Products({ allproducts }) {
               <Link href={`/products/${allproducts.id}`} legacyBehavior>
                 <a>
                   <Image
-                    src={allproducts.url}
+                    src="/images/produto.png"
                     width={1280}
                     height={1280}
                     className={styles.unicproducts}

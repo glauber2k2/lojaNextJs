@@ -9,7 +9,7 @@ export async function getStaticProps(context) {
   const { params } = context;
 
   const data = await fetch(
-    `https://jsonplaceholder.typicode.com/photos/${params.itemId}`
+    `https://jsonplaceholder.typicode.com/posts/${params.itemId}`
   );
 
   const item = await data.json();
@@ -20,7 +20,7 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const response = await fetch("https://jsonplaceholder.typicode.com/photos/");
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
 
   const data = await response.json();
 
