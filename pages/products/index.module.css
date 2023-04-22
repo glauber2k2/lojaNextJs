@@ -8,7 +8,6 @@
   margin: 2rem auto;
 }
 
-
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -29,10 +28,11 @@
   font-size: 15px;
   margin-inline: 1rem;
   margin-top: 0;
-
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.unicproducts{
+.unicproducts {
+  opacity: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,10 +40,8 @@
   height: 20.25rem;
   transition: 0.7s;
   margin-inline: 1rem;
-
-  
 }
 
-.unicproducts:hover{
-  opacity: 75%;
+.unicproducts:hover {
+  opacity: 100%;
 }

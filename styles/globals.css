@@ -1,22 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Source+Sans+Pro&display=swap");
 :root {
-  
-    --fundoelementos: #fae2b5;
-    --fundosecundario: #e9e9e9;
-    --primary100: #f25c54;
-    --primary80: #f27059;
-    --primary60: #f4845f;
-    --primary40: #f79d65;
-    --primary30: #f7b267;
-    
-  
+  --fundoelementos: #5752815e;
+  --fundosecundario: #0f0d1f;
+  --primary100: #cfcfcf;
+  --primary80: #cfcfcf;
+  --primary60: #cfcfcf;
+  --primary40: #cfcfcf;
+  --primary30: #cfcfcf;
 
-  background-color: #fbf4e6;
+  background-color: #171430;
   color: var(--primary30);
 }
 
 body {
-  font-family: 'Mukta', sans-serif;
+  font-family: "Amatic SC", cursive;
   margin-inline: auto;
 }

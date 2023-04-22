@@ -3,7 +3,6 @@ import Head from "next/head";
 
 import styles from "./item.module.css";
 
-import Sidebar from "../../../components/Sidebar";
 import Search from "../../../components/Search";
 
 export async function getStaticProps(context) {
@@ -39,8 +38,6 @@ export async function getStaticPaths() {
 export default function Item({ item }) {
   return (
     <>
-      <Sidebar />
-
       <Head>
         <title>{item.title.split(" ")[0]} - Monteiro</title>
       </Head>

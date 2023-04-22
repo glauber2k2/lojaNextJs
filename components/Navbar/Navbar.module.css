@@ -5,11 +5,11 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  min-height: 2rem;
   list-style: none;
-  
 }
 
-.Navbar a{
+.Navbar a {
   color: var(--primary100);
   text-decoration: none;
   font-weight: bold;
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 768px) {
-.Navbar a {
+  .Navbar a {
     font-size: 1rem;
   }
 }

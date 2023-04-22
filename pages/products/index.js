@@ -4,8 +4,6 @@ import Search from "../../components/Search";
 import Image from "next/image";
 import Link from "next/link";
 
-import Sidebar from "../../components/Sidebar/index";
-
 export async function getStaticProps() {
   const data = await fetch("https://jsonplaceholder.typicode.com/photos");
 
@@ -23,7 +21,6 @@ export default function Products({ allproducts }) {
         <title>Produtos - Monteiro</title>
       </Head>
 
-      <Sidebar />
       <div className={styles.Search}>
         <Search />
       </div>

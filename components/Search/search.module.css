@@ -1,12 +1,12 @@
-.container{
+.container {
   display: block;
 }
 
 .busca {
   display: flex;
   margin: auto;
-  background-color: var(--fundoelementos);
-  border: 1px solid var(--primary100);
+  background-color: #ffffff7e;
+  border: 1px solid #000000;
   width: 20rem;
   height: 2rem;
   text-align: center;
@@ -14,26 +14,32 @@
   color: var(--primary100);
 }
 
-.botao{
+.botao {
   display: flex;
   margin: auto;
   justify-content: center;
-  background-color: var(--primary100);
-  border: 1px solid var(--primary100);
+  align-items: center;
+  background-color: #498d1b;
+  border: 1px solid #000000;
   width: 20rem;
-  height: 1rem;
+  height: 2rem;
   text-align: center;
   font-weight: bold;
-  color: whitesmoke;
+  color: rgb(0, 0, 0);
   cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.botao:hover {
+  background-color: #c4c4c4;
 }
 
 @media (min-width: 768px) {
   .busca {
     width: 40rem;
   }
-  
-  .botao{
+
+  .botao {
     width: 40rem;
   }
 }
